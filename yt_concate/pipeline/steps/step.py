@@ -7,7 +7,7 @@ class Step(ABC):  # Step這個class繼承了ABC這個class的相關屬性
         pass  # 因為是抽象class所以用空的method
 
     @abstractmethod  # 使用abstractmethod後,子class繼承後都需要宣告下面的method
-    def process(self, data, inputs):  # 所以繼承Step的子class就要宣告process這個method以及自己要使用到inputs字典裡的什麼參數
+    def process(self, data, inputs, utils):  # 所以繼承Step的子class就要宣告process這個method以及自己要使用到inputs字典裡的什麼參數
         pass
 
 
